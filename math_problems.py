@@ -34,3 +34,12 @@ def get_fibonacci_numbers(max_limit=10000):
             break # 強制跳出"迴圈"
         FN_1, FN_2 = FN, FN_1
     return fibos
+
+if __name__ == "__main__":
+   n=100
+   print(f'Fibonacci Numbers List < {n}',get_fibonacci_numbers(n))
+   print(f'Prime Numbers List < {n}',get_prime_number(n))
+
+   edge_a = 3
+   edge_b = 4
+   print(f'Given 2 known edge:{edge_a, edge_b}, return two possible answer:',{3,4})

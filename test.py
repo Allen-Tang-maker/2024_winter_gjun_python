@@ -1,2 +1,3 @@
-from lesson_code.sort_algorithm import*
-from lesson_code.math_problems import get_fibonacci_numbers,get_prime_number,get_right_angle_edge
+import lesson_code
+print(lesson_code.bubble_sort([3,2,1]))
+print(lesson_code.get_right_angle_edge([3,4]))
