@@ -13,6 +13,8 @@ def merge(left, right):
     else:
         result = result + right
     return result
+
+
 def merge_sort(numbers):
     # print(f"Level: {int(math.log2(len(numbers)))}", numbers)
     if len(numbers) == 1:
@@ -26,6 +28,8 @@ def merge_sort(numbers):
         result = merge(sorted_left_part, sorted_right_part)
         # print(f"Level {int(math.log2(len(result)))} completed:", result)
         return result
+
+
 if __name__ == "__main__":
     numbers = [30, 10, 40, 70, 50, 90, 60, 20]
     result = merge_sort(numbers)
@@ -33,7 +37,7 @@ if __name__ == "__main__":
 
 
 left = [10, 30, 40, 70]
-right=[20, 50, 60, 90]
+right = [20, 50, 60, 90]
 result = list()
 
 while len(left) > 0 and len(right) > 0:
